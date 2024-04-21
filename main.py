@@ -26,6 +26,7 @@ def main():
      				qr_image_directory
 				)
                 os.mkdir(new_directory_path)
+                continue
             break
 
 if __name__ == "__main__":
