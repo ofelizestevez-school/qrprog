@@ -19,10 +19,9 @@ def main():
             try:
                 qr_image.save(directory_path_and_filename)
             except FileNotFoundError:
-                current_working_directory = os.getcwd()
                 qr_image_directory = Config.QR_CODE_IMAGE_DIRECTORY
                 new_directory_path = os.path.join(
-					current_working_directory,
+					full_path,
      				qr_image_directory
 				)
                 os.mkdir(new_directory_path)
