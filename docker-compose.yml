@@ -1,0 +1,13 @@
+version: "3.2"
+
+services:
+  qrcode:
+    build: .
+    volumes:
+      - .:/home/myuser
+    environment:
+      QR_CODE_IMAGE_DIRECTORY: "images"
+      QR_CODE_DEFAULT_URL: "https://hub.docker.com/r/ofelizestevez/qrcode-project-is218"
+      QR_CODE_DEFAULT_FILENAME: "dockerhub.png"
+    stdin_open: true
+    tty: true
